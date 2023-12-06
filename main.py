@@ -33,24 +33,24 @@ def validate_answer(answer, random_number, round):
             print("Smaller")
         elif int(answer) < random_number:
             print("Larger")
-    if round == 1:
+    elif round == 1:
         if int(answer) == random_number:
             points += 2
         elif int(answer) > random_number:
             print("Smaller")
         elif int(answer) < random_number:
             print("Larger")
-    if round == 2:
+    elif round == 2:
         if int(answer) == random_number:
             points += 1
         elif int(answer) > random_number:
             print("Smaller")
         elif int(answer) < random_number:
             print("Larger")
-    if round == 3:
+    elif round == 3:
         if int(answer) == random_number:
             points += 0.5
-        elif int(answer) > random_number:
+        elif int(answer) > random_number or int(answer) < random_number:
             print(f"The answer was: {random_number}")
         
     return float(points)

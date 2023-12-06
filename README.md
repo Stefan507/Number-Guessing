@@ -24,5 +24,5 @@
     - Increment the games counter with 1
 - Repeat above step 4 more times
 - Ouput the score of the user
-
+- Update score counter
     
